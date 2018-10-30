@@ -81,6 +81,12 @@ public class Cuenta {
             saldo += reintegro;
         }
     }
+    /**
+     * solicita introducir un numero por consola y luego verifica que dicho numero sea positivo
+     * 
+     * @param operacion tipo string para indicarque tipo de operacion vamos a realizar (ingreso, reintegro o transferencia)
+     * @return devuelve el numero introducido por consola solo si es positivo, si no lo es lo vuelve a solicitar
+     */
     public static double introNum(String operacion){
         Scanner scan = new Scanner(System.in);
         double num = 0;
